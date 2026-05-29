@@ -671,3 +671,38 @@ footer img{
 
 }
 
+/* ==========================================
+   CONTACTO - REDES SOCIALES
+========================================== */
+
+.contact-socials {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-socials a {
+  color: #e0b37d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-socials a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  .contact-socials {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contact-socials a {
+    font-size: 0.95rem;
+  }
+}
