@@ -672,37 +672,44 @@ footer img{
 }
 
 /* ==========================================
-   CONTACTO - REDES SOCIALES
+   REDES SOCIALES CONTACTO
 ========================================== */
 
 .contact-socials {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
 }
 
 .contact-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
   color: #e0b37d;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .contact-socials a:hover {
-  color: #ffffff;
-  transform: translateY(-2px);
+  background: #e0b37d;
+  color: #1f2f4a;
+  transform: translateY(-3px);
 }
 
-/* Móvil */
 @media (max-width: 768px) {
   .contact-socials {
-    justify-content: center;
-    gap: 15px;
+    gap: 18px;
   }
 
   .contact-socials a {
-    font-size: 0.95rem;
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
   }
 }
