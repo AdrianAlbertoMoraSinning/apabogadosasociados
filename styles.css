@@ -589,21 +589,22 @@ footer img{
 }
 
 @media(max-width:520px){
+
     .navbar{
-    height:74px
+        height:86px;
+        display:flex;
+        align-items:center;
+    }
 
-}
+    .nav-links{
+        top:86px;
+    }
 
-.nav-links{
-    top:74px
-
-}
-
-.brand img{
-    width:138px
-
-}
-
+    .brand img{
+        width:125px;
+        height:auto;
+    }
+    
 .hero{
     padding-top:18px
 
