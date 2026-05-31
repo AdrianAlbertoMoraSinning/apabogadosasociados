@@ -62,7 +62,13 @@ async function loadBookings(){
 
 function isBooked(date, time){
   const key = dateKey(date);
-  return bookedSlots.some(item => item.appointmentDate === key && item.appointmentTime === time && item.status !== 'cancelled');
+  const normalizeHour = value => Number(String(value).split(':')[0]);
+
+  return bookedSlots.some(item =>
+    String(item.appointmentDate).trim() === key &&
+    normalizeHour(item.appointmentTime) === normalizeHour(time) &&
+    String(item.status).toLowerCase() !== 'cancelled'
+  );
 }
 
 function renderCalendar(){
