@@ -11,7 +11,7 @@
   7. Copy Web App URL into agenda-config.js > appsScriptUrl.
 */
 
-const SHEET_ID = 'const SHEET_ID = '1SGt-Br7K-pMlfVDVxDEB219hYeBDUC3AEuf_DviL1s';
+const SHEET_ID = const SHEET_ID = '1SGt-Br7K-pMlfVDVxDEB219hYeBDUC3AEuf_DviL1s';
 const SHEET_NAME = 'appointments';
 const OWNER_EMAIL = 'abogadosasociadosap4@mail.com';
 const ADMIN_PIN = '3108030751';
