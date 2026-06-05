@@ -732,3 +732,215 @@ footer img{
     padding: 18px 22px;
   }
 }
+
+/* ==========================================
+   AJUSTES CLIENTE - INDICADORES / EXPERIENCIA / LINKS
+========================================== */
+
+.impact-stats{
+    width:min(980px,88vw);
+    margin:-48px auto 0;
+    background:#fff;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-radius:2px;
+    box-shadow:0 18px 50px rgba(30,45,66,.18);
+    position:relative;
+    z-index:3;
+    overflow:hidden;
+}
+
+.impact-stats div{
+    text-align:center;
+    padding:26px 22px;
+    border-right:1px solid rgba(30,45,66,.12);
+}
+
+.impact-stats div:last-child{border-right:0;}
+
+.impact-stats strong{
+    display:block;
+    font-family:"Cormorant Garamond",serif;
+    font-size:46px;
+    line-height:.9;
+    color:var(--navy);
+}
+
+.impact-stats span{
+    display:block;
+    margin-top:8px;
+    color:#667085;
+    font-weight:700;
+}
+
+.section-intro{
+    color:#667085;
+    font-size:17px;
+    line-height:1.65;
+    margin:18px auto 0;
+    max-width:720px;
+}
+
+.experience-accordion{
+    max-width:1050px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.experience-accordion details{
+    background:#fff;
+    border-left:4px solid var(--gold);
+    border-radius:18px;
+    box-shadow:0 16px 45px rgba(30,45,66,.08);
+    overflow:hidden;
+}
+
+.experience-accordion summary{
+    list-style:none;
+    cursor:pointer;
+    padding:22px 26px;
+    font-weight:900;
+    color:var(--navy);
+    font-size:18px;
+    position:relative;
+}
+
+.experience-accordion summary::-webkit-details-marker{display:none;}
+
+.experience-accordion summary::after{
+    content:"+";
+    position:absolute;
+    right:24px;
+    top:50%;
+    transform:translateY(-50%);
+    color:var(--gold);
+    font-size:24px;
+}
+
+.experience-accordion details[open] summary::after{content:"–";}
+
+.experience-accordion p{
+    margin:0;
+    padding:0 26px 24px;
+    font-size:16px;
+    line-height:1.65;
+    color:#475467;
+}
+
+.focus-section,.useful-links,.allied-firms{
+    padding:95px 6vw;
+}
+
+.focus-section{background:var(--cream);}
+.useful-links{background:#fff;}
+.allied-firms{background:#f8f8f7;}
+
+.focus-grid,.links-grid,.allied-grid{
+    max-width:1050px;
+    margin:0 auto;
+    display:grid;
+    gap:18px;
+}
+
+.focus-grid{grid-template-columns:repeat(3,1fr);}
+.links-grid{grid-template-columns:repeat(2,1fr);}
+.allied-grid{grid-template-columns:repeat(2,1fr);}
+
+.focus-grid article,.links-grid a,.allied-grid a,.advisory-note{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:26px;
+    box-shadow:0 16px 45px rgba(30,45,66,.08);
+}
+
+.focus-grid h3{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--navy);
+    font-size:30px;
+    margin:0 0 12px;
+    line-height:1.05;
+}
+
+.focus-grid p,.advisory-note p{
+    color:#475467;
+    line-height:1.7;
+    margin:0;
+}
+
+.advisory-note{
+    max-width:1050px;
+    margin:22px auto 0;
+    border-left:5px solid var(--gold);
+}
+
+.advisory-note strong{
+    display:block;
+    color:var(--navy);
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.links-grid a,.allied-grid a{
+    text-decoration:none;
+    color:var(--navy);
+    transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.links-grid a:hover,.allied-grid a:hover{
+    transform:translateY(-4px);
+    box-shadow:0 22px 55px rgba(30,45,66,.14);
+}
+
+.links-grid strong,.allied-grid strong{
+    display:block;
+    font-size:18px;
+    margin-bottom:9px;
+}
+
+.links-grid span,.allied-grid span{
+    display:block;
+    color:#667085;
+    line-height:1.55;
+}
+
+.contact{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.contact > div:first-child{
+    max-width:860px;
+    margin:0 auto;
+}
+
+.contact-socials{
+    margin-top:8px;
+}
+
+@media(max-width:900px){
+    .impact-stats{
+        margin:0 auto;
+        grid-template-columns:1fr;
+    }
+    .impact-stats div{
+        border-right:0;
+        border-bottom:1px solid rgba(30,45,66,.12);
+    }
+    .impact-stats div:last-child{border-bottom:0;}
+    .experience-accordion,.focus-grid,.links-grid,.allied-grid{
+        grid-template-columns:1fr;
+    }
+    .focus-section,.useful-links,.allied-firms{
+        padding:68px 6vw;
+    }
+}
+
+@media(max-width:520px){
+    .impact-stats strong{font-size:42px;}
+    .experience-accordion summary{font-size:16px;padding:20px 48px 20px 22px;}
+    .experience-accordion p{padding:0 22px 22px;}
+    .focus-grid article,.links-grid a,.allied-grid a,.advisory-note{padding:22px;}
+}
