@@ -969,8 +969,8 @@ footer img{
 @media screen and (max-width: 600px) {
   a.floating-whatsapp {
     position: fixed !important;
-    right: 8px !important;
-    bottom: 125px !important;
+    right: 82px !important;   /* Lo mueve a la izquierda del chatbot */
+    bottom: 20px !important;  /* Misma altura que el botón de Jotform */
     width: 56px !important;
     height: 56px !important;
     margin: 0 !important;
@@ -979,6 +979,7 @@ footer img{
     align-items: center !important;
     justify-content: center !important;
     transform: none !important;
+    z-index: 999999 !important;
   }
 
   a.floating-whatsapp i {
