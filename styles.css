@@ -445,26 +445,38 @@ img{
 
 }
 
+/* ==========================================
+   BOTÓN FLOTANTE DE WHATSAPP
+========================================== */
+
 .floating-whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:110px;
-  width:64px;
-  height:64px;
-  border-radius:50%;
-  background:#25D366;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  box-shadow:0 10px 25px rgba(0,0,0,.25);
-  z-index:9999;
+    position:fixed;
+    right:20px;
+    bottom:118px;
+    width:60px;
+    height:60px;
+    padding:0;
+    margin:0;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:9999;
 }
 
 .floating-whatsapp i{
-  font-size:36px;
-  color:#fff;
-  line-height:1;
+    display:block;
+    width:auto;
+    height:auto;
+    margin:0;
+    padding:0;
+    font-size:34px;
+    line-height:1;
+    color:#fff;
+    transform:translateY(1px);
 }
 
 footer{
@@ -663,23 +675,6 @@ footer img{
     padding:17px
 
 }
-    
-.floating-whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:110px;
-  width:64px;
-  height:64px;
-  border-radius:50%;
-  background:#25D366;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  box-shadow:0 10px 25px rgba(0,0,0,.25);
-  z-index:9999;
-}
-
 }
 
 /* ==========================================
@@ -954,4 +949,19 @@ footer img{
     .experience-accordion summary{font-size:16px;padding:20px 48px 20px 22px;}
     .experience-accordion p{padding:0 22px 22px;}
     .focus-grid article,.links-grid a,.allied-grid a,.advisory-note{padding:22px;}
+}
+
+/* Ajuste del botón flotante en celulares */
+@media(max-width:520px){
+    .floating-whatsapp{
+        right:18px;
+        bottom:120px;
+        width:56px;
+        height:56px;
+    }
+
+    .floating-whatsapp i{
+        font-size:31px;
+        transform:translateY(1px);
+    }
 }
