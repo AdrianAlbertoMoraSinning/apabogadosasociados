@@ -965,3 +965,27 @@ footer img{
         transform:translateY(1px);
     }
 }
+/* AJUSTE FINAL WHATSAPP MÓVIL */
+@media screen and (max-width: 600px) {
+  a.floating-whatsapp {
+    position: fixed !important;
+    right: 8px !important;
+    bottom: 125px !important;
+    width: 56px !important;
+    height: 56px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transform: none !important;
+  }
+
+  a.floating-whatsapp i {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 31px !important;
+    line-height: 1 !important;
+    transform: translateY(1px) !important;
+  }
+}
