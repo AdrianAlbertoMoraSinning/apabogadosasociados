@@ -954,7 +954,7 @@ footer img{
 /* Ajuste del botón flotante en celulares */
 @media(max-width:520px){
     .floating-whatsapp{
-        right:18px;
+        right:12px;
         bottom:120px;
         width:56px;
         height:56px;
