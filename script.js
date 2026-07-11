@@ -36,7 +36,7 @@ function positionWhatsAppButton() {
   whatsappButton.style.setProperty("transform", "none", "important");
 
   if (isMobile) {
-    whatsappButton.style.setProperty("right", "14px", "important");
+    whatsappButton.style.setProperty("right", "10px", "important");
     whatsappButton.style.setProperty("bottom", "125px", "important");
     whatsappButton.style.setProperty("width", "56px", "important");
     whatsappButton.style.setProperty("height", "56px", "important");
