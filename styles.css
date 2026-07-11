@@ -664,10 +664,11 @@ footer img{
 
 }
 
-.floating-whatsapp{
-    width:60px;
-    height:60px;
-    padding:0;
+.floating-whatsapp {
+  position: fixed;
+  right: 95px;
+  bottom: 22px;
+  z-index: 999;
 }
 
 }
