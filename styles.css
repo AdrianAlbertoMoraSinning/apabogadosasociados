@@ -1023,3 +1023,34 @@ footer img{
     transform: translateY(1px) !important;
   }
 }
+
+/* ==========================================
+   EVOLUCIÓN CORPORATIVA 2026
+========================================== */
+.services-intro{color:#d8dee8;font-size:17px;line-height:1.65;max-width:720px;margin:18px auto 0;}
+.services-grid{grid-template-columns:repeat(4,1fr);}
+.services-grid .card{min-height:100%;}
+
+.corporate-capabilities{padding:100px 6vw;background:#fff;}
+.capability-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.capability-grid article{padding:30px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 16px 45px rgba(30,45,66,.07);}
+.capability-grid i{font-size:26px;color:var(--gold);margin-bottom:18px;}
+.capability-grid h3{font-family:"Cormorant Garamond",serif;font-size:28px;line-height:1.05;color:var(--navy);margin:0 0 12px;}
+.capability-grid p{color:#667085;line-height:1.65;margin:0;}
+
+.international-section{padding:105px 6vw;background:linear-gradient(135deg,#162438 0%,#1e2d42 60%,#263a55 100%);color:#fff;}
+.international-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center;}
+.international-copy h2{font-family:"Cormorant Garamond",serif;font-size:clamp(40px,5vw,66px);line-height:1;color:#fff;margin:0 0 24px;}
+.international-copy p{font-size:17px;line-height:1.75;color:#d8dee8;}
+.international-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+.international-tags span{border:1px solid rgba(210,165,120,.5);color:#f2d6b8;padding:9px 13px;border-radius:999px;font-size:13px;font-weight:700;}
+.international-mark{min-height:300px;border:1px solid rgba(255,255,255,.16);border-radius:28px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;padding:38px;text-align:center;}
+.international-mark span{font-family:"Cormorant Garamond",serif;font-size:50px;font-weight:700;color:#fff;}
+.international-mark i{color:var(--gold);font-size:24px;}
+.international-mark small{width:100%;color:#d8dee8;font-size:14px;line-height:1.6;}
+.experience-featured{border-left-color:#1e2d42!important;background:#fbf7f2!important;}
+.experience-accordion details p em{display:block;margin-top:10px;color:#8b6645;font-style:normal;font-weight:700;}
+
+@media(max-width:1100px){.services-grid{grid-template-columns:repeat(2,1fr);}.capability-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:900px){.corporate-capabilities,.international-section{padding:68px 6vw;}.international-inner{grid-template-columns:1fr;gap:36px;}.international-mark{min-height:220px;}.capability-grid{grid-template-columns:1fr;}}
+@media(max-width:520px){.services-grid{grid-template-columns:1fr;}.international-mark span{font-size:40px;}.international-copy h2{font-size:40px;}}
