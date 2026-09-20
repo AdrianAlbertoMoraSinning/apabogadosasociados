@@ -445,40 +445,6 @@ img{
 
 }
 
-/* ==========================================
-   BOTÓN FLOTANTE DE WHATSAPP
-========================================== */
-
-.floating-whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:118px;
-    width:60px;
-    height:60px;
-    padding:0;
-    margin:0;
-    border-radius:50%;
-    background:#25D366;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-    z-index:9999;
-}
-
-.floating-whatsapp i{
-    display:block;
-    width:auto;
-    height:auto;
-    margin:0;
-    padding:0;
-    font-size:34px;
-    line-height:1;
-    color:#fff;
-    transform:translateY(1px);
-}
-
 footer{
     text-align:center;
     padding:50px 6vw;
@@ -949,79 +915,6 @@ footer img{
     .experience-accordion summary{font-size:16px;padding:20px 48px 20px 22px;}
     .experience-accordion p{padding:0 22px 22px;}
     .focus-grid article,.links-grid a,.allied-grid a,.advisory-note{padding:22px;}
-}
-
-/* Ajuste del botón flotante en celulares */
-@media(max-width:520px){
-    .floating-whatsapp{
-        right:10px;
-        bottom:120px;
-        width:56px;
-        height:56px;
-    }
-
-    .floating-whatsapp i{
-        font-size:31px;
-        transform:translateY(1px);
-    }
-}
-/* AJUSTE FINAL WHATSAPP MÓVIL */
-@media screen and (max-width: 600px) {
-  a.floating-whatsapp {
-    position: fixed !important;
-    right: 82px !important;   /* Lo mueve a la izquierda del chatbot */
-    bottom: 20px !important;  /* Misma altura que el botón de Jotform */
-    width: 56px !important;
-    height: 56px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transform: none !important;
-    z-index: 999999 !important;
-  }
-
-  a.floating-whatsapp i {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 31px !important;
-    line-height: 1 !important;
-    transform: translateY(1px) !important;
-  }
-}
-/* WHATSAPP A LA IZQUIERDA DEL CHATBOT — SOLO MÓVIL */
-@media screen and (max-width: 600px) {
-  html body a.floating-whatsapp {
-    position: fixed !important;
-    right: 82px !important;
-    bottom: 30px !important;
-    top: auto !important;
-    left: auto !important;
-
-    width: 56px !important;
-    height: 56px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    transform: none !important;
-    transition: none !important;
-
-    z-index: 2147483646 !important;
-  }
-
-  html body a.floating-whatsapp i {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 31px !important;
-    line-height: 1 !important;
-    transform: translateY(1px) !important;
-  }
 }
 
 /* ==========================================
